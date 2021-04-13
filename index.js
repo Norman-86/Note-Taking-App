@@ -21,7 +21,7 @@ function getExistingNotes() {
 }
 
 function saveNote() {
-    if (textElement.value == '') {
+    if (textElement.value === '' && textElement.value !== string) {
         console.log('Text is Empty')
     }
     const id = getNoteId()
